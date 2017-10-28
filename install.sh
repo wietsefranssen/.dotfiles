@@ -1,0 +1,10 @@
+#!/bin/bash
+HOMEPATH=$HOME
+CURRPATH=$(pwd)
+
+FILE='.zshrc'
+FILEHOME=$HOMEPATH"/"$FILE
+FILEBACKUP=$FILEHOME'_backup'
+if [ -f $FILEBACKUP ]; then rm $FILEBACKUP; fi 
+if [ -f $FILEHOME ]; then mv $FILEHOME $FILEBACKUP; fi
+ln -s $CURRPATH"/"$FILE $FILEHOME
