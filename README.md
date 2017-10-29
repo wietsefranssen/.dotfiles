@@ -6,10 +6,12 @@ dotfiles for Ubuntu
 
 ### dependencies
 
-#### fasd
+#### fasd 
+
+#### installation
 
 ```bash
-$ sudo add-apt-repository ppa:aacebedo/fasd
-$ sudo apt-get update
-$ sudo apt-get install fasd
+sudo add-apt-repository ppa:aacebedo/fasd
+sudo apt-get update
+sudo apt-get install fasd
 ```
